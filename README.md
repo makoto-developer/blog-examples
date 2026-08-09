@@ -10,6 +10,9 @@
 | [`automatic-differentiation/`](automatic-differentiation/) | [自動微分を実装する —— forward と reverse はどこで逆転するか](https://blog.makoto-developer.net/articles/automatic-differentiation-forward-reverse) |
 | [`bb84/`](bb84/) | [BB84 は何を根拠に安全なのか —— 盗聴検知を実装して測る](https://blog.makoto-developer.net/articles/bb84-eavesdropping-detection) |
 | [`beam-lightweight-process/`](beam-lightweight-process/) | [「軽量プロセス」はどれくらい軽いのか —— BEAM・goroutine・OSスレッドを実測する](https://blog.makoto-developer.net/articles/beam-lightweight-process-memory) |
+| [`autodiff-closure-highorder/`](autodiff-closure-highorder/) | テープを捨てたら2.2倍遅くなった —— クロージャ方式の自動微分と高階微分（下書き） |
+| [`e91-bell-under-eavesdropping/`](e91-bell-under-eavesdropping/) | Bell の破れは盗聴検知としては鈍い —— E91 を実装して測る（下書き） |
+| [`gc-pause-beam-vs-go/`](gc-pause-beam-vs-go/) | 560万回GCしても止まらない、けれど遅い —— BEAM と Go の停止時間を測る（下書き） |
 
 ## 数字の再現について
 
