@@ -1,0 +1,16 @@
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  294878	      1925 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  322983	      1868 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  328684	      1823 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  332298	      1875 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  332592	      1826 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  330736	      1831 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  331497	      1830 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  310209	      1836 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  335566	      1814 ns/op	     152 B/op	       3 allocs/op
+BenchmarkOpenClose-4   	  330225	      1829 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	6.005s

@@ -1,0 +1,65 @@
+env: go1.26.5 GOMAXPROCS=18 GOGC="" GOMEMLIMIT="" NumCPU=18
+goos: darwin
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+cpu: Apple M5 Pro
+BenchmarkChunk/size=512B/chunk=4KB/impl=std-18         	 3425766	       175.8 ns/op	2912.30 MB/s	    1312 B/op	       4 allocs/op
+BenchmarkChunk/size=4KB/chunk=4KB/impl=std-18          	  621780	      1064 ns/op	3851.39 MB/s	   10400 B/op	      10 allocs/op
+BenchmarkChunk/size=64KB/chunk=4KB/impl=std-18         	   58587	     10320 ns/op	6350.26 MB/s	  138144 B/op	      17 allocs/op
+BenchmarkChunk/size=1MB/chunk=4KB/impl=std-18          	    3786	    158523 ns/op	6614.66 MB/s	 2228007 B/op	      25 allocs/op
+BenchmarkChunk/size=16MB/chunk=4KB/impl=std-18         	     627	    926559 ns/op	18107.01 MB/s	36224824 B/op	      32 allocs/op
+BenchmarkChunk/size=100MB/chunk=4KB/impl=std-18        	      96	   5614731 ns/op	18675.44 MB/s	252182305 B/op	      37 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	4.138s
+env: go1.26.5 GOMAXPROCS=18 GOGC="" GOMEMLIMIT="" NumCPU=18
+goos: darwin
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+cpu: Apple M5 Pro
+BenchmarkChunk/size=512B/chunk=4KB/impl=std-18         	 2914792	       267.4 ns/op	1914.88 MB/s	    1312 B/op	       4 allocs/op
+BenchmarkChunk/size=4KB/chunk=4KB/impl=std-18          	  293492	      1935 ns/op	2116.29 MB/s	   10400 B/op	      10 allocs/op
+BenchmarkChunk/size=64KB/chunk=4KB/impl=std-18         	   47271	     12730 ns/op	5148.02 MB/s	  138145 B/op	      17 allocs/op
+BenchmarkChunk/size=1MB/chunk=4KB/impl=std-18          	    2516	    222254 ns/op	4717.92 MB/s	 2228029 B/op	      25 allocs/op
+BenchmarkChunk/size=16MB/chunk=4KB/impl=std-18         	     576	   1067744 ns/op	15712.78 MB/s	36224831 B/op	      32 allocs/op
+BenchmarkChunk/size=100MB/chunk=4KB/impl=std-18        	      78	   7108678 ns/op	14750.65 MB/s	252182309 B/op	      37 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	3.882s
+env: go1.26.5 GOMAXPROCS=18 GOGC="" GOMEMLIMIT="" NumCPU=18
+goos: darwin
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+cpu: Apple M5 Pro
+BenchmarkChunk/size=512B/chunk=4KB/impl=std-18         	 3577832	       163.6 ns/op	3130.12 MB/s	    1312 B/op	       4 allocs/op
+BenchmarkChunk/size=4KB/chunk=4KB/impl=std-18          	  581410	      1026 ns/op	3992.38 MB/s	   10400 B/op	      10 allocs/op
+BenchmarkChunk/size=64KB/chunk=4KB/impl=std-18         	   56347	     10364 ns/op	6323.30 MB/s	  138144 B/op	      17 allocs/op
+BenchmarkChunk/size=1MB/chunk=4KB/impl=std-18          	    3820	    156834 ns/op	6685.89 MB/s	 2228006 B/op	      25 allocs/op
+BenchmarkChunk/size=16MB/chunk=4KB/impl=std-18         	     589	    946649 ns/op	17722.74 MB/s	36224822 B/op	      32 allocs/op
+BenchmarkChunk/size=100MB/chunk=4KB/impl=std-18        	      98	   5361154 ns/op	19558.77 MB/s	252182306 B/op	      37 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	3.734s
+env: go1.26.5 GOMAXPROCS=18 GOGC="" GOMEMLIMIT="" NumCPU=18
+goos: darwin
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+cpu: Apple M5 Pro
+BenchmarkChunk/size=512B/chunk=4KB/impl=std-18         	 3555424	       214.1 ns/op	2391.14 MB/s	    1312 B/op	       4 allocs/op
+BenchmarkChunk/size=4KB/chunk=4KB/impl=std-18          	  365274	      1705 ns/op	2402.98 MB/s	   10400 B/op	      10 allocs/op
+BenchmarkChunk/size=64KB/chunk=4KB/impl=std-18         	   57470	     10374 ns/op	6317.55 MB/s	  138144 B/op	      17 allocs/op
+BenchmarkChunk/size=1MB/chunk=4KB/impl=std-18          	    3913	    175210 ns/op	5984.68 MB/s	 2228016 B/op	      25 allocs/op
+BenchmarkChunk/size=16MB/chunk=4KB/impl=std-18         	     501	   1098427 ns/op	15273.86 MB/s	36224823 B/op	      32 allocs/op
+BenchmarkChunk/size=100MB/chunk=4KB/impl=std-18        	      90	   6115581 ns/op	17145.97 MB/s	252182305 B/op	      37 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	4.035s
+env: go1.26.5 GOMAXPROCS=18 GOGC="" GOMEMLIMIT="" NumCPU=18
+goos: darwin
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+cpu: Apple M5 Pro
+BenchmarkChunk/size=512B/chunk=4KB/impl=std-18         	 3728578	       155.9 ns/op	3284.48 MB/s	    1312 B/op	       4 allocs/op
+BenchmarkChunk/size=4KB/chunk=4KB/impl=std-18          	  605662	      1222 ns/op	3351.71 MB/s	   10400 B/op	      10 allocs/op
+BenchmarkChunk/size=64KB/chunk=4KB/impl=std-18         	   46062	     12366 ns/op	5299.71 MB/s	  138145 B/op	      17 allocs/op
+BenchmarkChunk/size=1MB/chunk=4KB/impl=std-18          	    3802	    155535 ns/op	6741.75 MB/s	 2228005 B/op	      25 allocs/op
+BenchmarkChunk/size=16MB/chunk=4KB/impl=std-18         	     634	    927558 ns/op	18087.51 MB/s	36224826 B/op	      32 allocs/op
+BenchmarkChunk/size=100MB/chunk=4KB/impl=std-18        	      99	   5412628 ns/op	19372.77 MB/s	252182304 B/op	      37 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	3.830s

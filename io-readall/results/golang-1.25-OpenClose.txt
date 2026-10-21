@@ -1,0 +1,70 @@
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  319862	      1899 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.610s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  322238	      1895 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.613s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  316524	      1868 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.594s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  292488	      1922 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.564s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  315662	      1881 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.597s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  320480	      1864 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.600s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  321129	      1894 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.611s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  320545	      1902 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.612s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  320004	      1923 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.618s
+env: go1.25.13 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkOpenClose-4   	  318976	      1920 ns/op	     152 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.615s
