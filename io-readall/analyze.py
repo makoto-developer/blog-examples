@@ -11,7 +11,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-LINE = re.compile(r"^Benchmark(\w+)/(\S+?)-\d+\s+\d+\s+([\d.]+) ns/op.*?(?:\s([\d.]+) B/op\s+(\d+) allocs/op)?$")
+# サブベンチ名の無い BenchmarkOpenClose-4 も読めるよう、"/..." を省略可能にしている。
+LINE = re.compile(r"^Benchmark(\w+?)(?:/(\S+?))?-\d+\s+\d+\s+([\d.]+) ns/op.*?(?:\s([\d.]+) B/op\s+(\d+) allocs/op)?$")
 
 
 def load(bench):
@@ -25,7 +26,7 @@ def load(bench):
             if not m:
                 continue
             name, ns, bop, allocs = m.group(2), float(m.group(3)), m.group(4), m.group(5)
-            keys = dict(kv.split("=", 1) for kv in name.split("/"))
+            keys = dict(kv.split("=", 1) for kv in name.split("/")) if name else {"case": m.group(1)}
             rows[(version, tuple(sorted(keys.items())))]["ns"].append(ns)
             if bop is not None:
                 rows[(version, tuple(sorted(keys.items())))]["B"].append(float(bop))

@@ -13,7 +13,7 @@
 | [`autodiff-closure-highorder/`](autodiff-closure-highorder/) | テープを捨てたら2.2倍遅くなった —— クロージャ方式の自動微分と高階微分（下書き） |
 | [`e91-bell-under-eavesdropping/`](e91-bell-under-eavesdropping/) | Bell の破れは盗聴検知としては鈍い —— E91 を実装して測る（下書き） |
 | [`gc-pause-beam-vs-go/`](gc-pause-beam-vs-go/) | 560万回GCしても止まらない、けれど遅い —— BEAM と Go の停止時間を測る（下書き） |
-| [`io-readall/`](io-readall/) | io.ReadAll が速くなった —— ただし 481〜511バイトだけは遅くなる（下書き） |
+| [`io-readall/`](io-readall/) | io.ReadAll が速くなった —— ただし 481〜511バイトでは遅くなる（下書き） |
 
 ## 数字の再現について
 
