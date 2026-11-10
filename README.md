@@ -13,6 +13,7 @@
 | [`autodiff-closure-highorder/`](autodiff-closure-highorder/) | テープを捨てたら2.2倍遅くなった —— クロージャ方式の自動微分と高階微分（下書き） |
 | [`e91-bell-under-eavesdropping/`](e91-bell-under-eavesdropping/) | Bell の破れは盗聴検知としては鈍い —— E91 を実装して測る（下書き） |
 | [`gc-pause-beam-vs-go/`](gc-pause-beam-vs-go/) | 560万回GCしても止まらない、けれど遅い —— BEAM と Go の停止時間を測る（下書き） |
+| [`io-readall/`](io-readall/) | io.ReadAll が速くなった —— ただし 481〜511バイトでは遅くなる（下書き） |
 
 ## 数字の再現について
 
@@ -24,3 +25,5 @@
   バイト数、BEAM が CPU 制限だけを認識してメモリ制限を認識しないこと、
   `max_heap_size` が参照カウント方式のバイナリを素通りすることである。
   第7節は Docker が要る（`elixir:1.19-otp-28-slim` / `golang:1.25-alpine` / `golang:1.24-alpine`）
+- **io.ReadAll** は Go のベンチなので `python3` だけでは動かない（Docker が要る）。
+  環境によらないのは `B/op` と `allocs/op`、それに 481〜511B の崖の位置である

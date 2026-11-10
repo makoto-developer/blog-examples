@@ -1,0 +1,240 @@
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  236628	      2471 ns/op	 207.19 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  242470	      2467 ns/op	 207.52 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  243319	      2488 ns/op	 205.83 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  125702	      4788 ns/op	 855.44 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  125731	      4877 ns/op	 839.88 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  126688	      4768 ns/op	 858.98 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   34116	     17799 ns/op	3681.92 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   17398	     31176 ns/op	2102.16 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   35390	     16729 ns/op	3917.43 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    2049	    287389 ns/op	3648.63 MB/s	 2228127 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     625	    936851 ns/op	1119.26 MB/s	 5241277 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    1734	    311534 ns/op	3365.85 MB/s	 2228126 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     146	   4076418 ns/op	4115.68 MB/s	36224990 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      45	  12988447 ns/op	1291.70 MB/s	102636094 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     160	   3834924 ns/op	4374.85 MB/s	36224984 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      44	  15055792 ns/op	6964.60 MB/s	252182441 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      12	  45411246 ns/op	2309.07 MB/s	615225892 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      36	  16283764 ns/op	6439.40 MB/s	252182637 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.716s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  239695	      2536 ns/op	 201.85 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  239857	      2498 ns/op	 204.93 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  236732	      2573 ns/op	 199.02 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  120445	      4878 ns/op	 839.72 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  121747	      4850 ns/op	 844.45 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  123758	      4823 ns/op	 849.27 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   36621	     16501 ns/op	3971.74 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   23952	     25573 ns/op	2562.70 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   36156	     17490 ns/op	3746.95 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    2539	    247955 ns/op	4228.89 MB/s	 2228127 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     728	   1015067 ns/op	1033.01 MB/s	 5241271 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2438	    239838 ns/op	4372.02 MB/s	 2228126 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     162	   3630460 ns/op	4621.24 MB/s	36224975 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      56	  13165796 ns/op	1274.30 MB/s	102636076 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     162	   3790422 ns/op	4426.21 MB/s	36225004 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      34	  17404620 ns/op	6024.70 MB/s	252182473 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      12	  45060198 ns/op	2327.06 MB/s	615225864 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      34	  16935588 ns/op	6191.55 MB/s	252182496 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	11.104s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  242356	      2512 ns/op	 203.82 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  231624	      2492 ns/op	 205.47 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  234717	      2490 ns/op	 205.64 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  130726	      4627 ns/op	 885.17 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  123301	      4691 ns/op	 873.13 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  126602	      4703 ns/op	 870.91 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   37620	     15543 ns/op	4216.33 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   23990	     25053 ns/op	2615.91 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   38199	     15725 ns/op	4167.69 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    2847	    234445 ns/op	4472.59 MB/s	 2228125 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     616	    981082 ns/op	1068.80 MB/s	 5241277 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    1734	    370266 ns/op	2831.95 MB/s	 2228133 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     160	   3755390 ns/op	4467.50 MB/s	36224972 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      42	  14131829 ns/op	1187.19 MB/s	102636125 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     150	   3943872 ns/op	4254.00 MB/s	36224978 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      39	  15059130 ns/op	6963.06 MB/s	252182498 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      13	  43045093 ns/op	2435.99 MB/s	615225881 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      37	  18026367 ns/op	5816.90 MB/s	252182484 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.913s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  234436	      2483 ns/op	 206.20 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  233470	      2484 ns/op	 206.10 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  237403	      2555 ns/op	 200.38 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  128019	      4663 ns/op	 878.41 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  125565	      4701 ns/op	 871.38 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  128218	      4675 ns/op	 876.07 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   37339	     16442 ns/op	3985.97 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   23677	     25376 ns/op	2582.65 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   36733	     16271 ns/op	4027.73 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    3858	    267162 ns/op	3924.88 MB/s	 2228129 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     698	    919809 ns/op	1139.99 MB/s	 5241261 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2013	    286370 ns/op	3661.61 MB/s	 2228128 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     168	   3633548 ns/op	4617.31 MB/s	36224992 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      37	  14894455 ns/op	1126.41 MB/s	102636082 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     157	   3796831 ns/op	4418.74 MB/s	36224979 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      34	  14913652 ns/op	7030.98 MB/s	252182516 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      12	  45737757 ns/op	2292.58 MB/s	615225901 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      46	  17060710 ns/op	6146.15 MB/s	252182501 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	11.279s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  244426	      2437 ns/op	 210.11 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  246704	      2417 ns/op	 211.84 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  242785	      2441 ns/op	 209.79 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  128137	      4607 ns/op	 889.02 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  128029	      4722 ns/op	 867.39 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  129741	      4647 ns/op	 881.40 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   36912	     15942 ns/op	4110.89 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   23734	     25263 ns/op	2594.17 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   38160	     15792 ns/op	4150.08 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    4004	    218938 ns/op	4789.38 MB/s	 2228124 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     604	    959906 ns/op	1092.37 MB/s	 5241275 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2578	    244945 ns/op	4280.87 MB/s	 2228126 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     156	   3786026 ns/op	4431.35 MB/s	36224973 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      46	  12689730 ns/op	1322.11 MB/s	102636074 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     153	   3883506 ns/op	4320.12 MB/s	36224992 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      34	  16527877 ns/op	6344.29 MB/s	252182529 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      13	  44198196 ns/op	2372.44 MB/s	615225855 B/op	      51 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      33	  17278576 ns/op	6068.65 MB/s	252182536 B/op	      40 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.999s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  224281	      2573 ns/op	 198.99 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  237470	      2689 ns/op	 190.38 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  233142	      2614 ns/op	 195.88 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  104470	      5152 ns/op	 794.98 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  124458	      4741 ns/op	 863.89 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  127894	      4672 ns/op	 876.74 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   37737	     17448 ns/op	3755.97 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   23043	     25931 ns/op	2527.36 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   36319	     16968 ns/op	3862.38 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    1521	    329054 ns/op	3186.64 MB/s	 2228128 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     380	   1367890 ns/op	 766.56 MB/s	 5241270 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2162	    266904 ns/op	3928.66 MB/s	 2228126 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     140	   4268719 ns/op	3930.27 MB/s	36225010 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      42	  13181901 ns/op	1272.75 MB/s	102635997 B/op	      43 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     148	   3853299 ns/op	4353.99 MB/s	36224983 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      34	  15449228 ns/op	6787.24 MB/s	252182499 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      13	  44520042 ns/op	2355.29 MB/s	615225855 B/op	      51 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      36	  16817858 ns/op	6234.90 MB/s	252182486 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.517s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  236058	      2517 ns/op	 203.44 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  244515	      2508 ns/op	 204.18 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  236991	      2509 ns/op	 204.03 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  118668	      4869 ns/op	 841.15 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  126771	      4790 ns/op	 855.10 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  126601	      4761 ns/op	 860.35 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   36166	     16782 ns/op	3905.25 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   22924	     26273 ns/op	2494.45 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   36210	     16610 ns/op	3945.61 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    3760	    196540 ns/op	5335.18 MB/s	 2228127 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     733	    861627 ns/op	1216.97 MB/s	 5241264 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2596	    220272 ns/op	4760.38 MB/s	 2228126 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     160	   3687448 ns/op	4549.82 MB/s	36224980 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      38	  14389508 ns/op	1165.93 MB/s	102636063 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     158	   3843972 ns/op	4364.55 MB/s	36224975 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      36	  16259584 ns/op	6448.97 MB/s	252182467 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      12	  45935566 ns/op	2282.71 MB/s	615225873 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      30	  17001801 ns/op	6167.44 MB/s	252182465 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.797s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  243313	      2510 ns/op	 203.97 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  245511	      2421 ns/op	 211.48 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  238916	      2490 ns/op	 205.65 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  123819	      4709 ns/op	 869.82 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  129057	      4748 ns/op	 862.73 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  127406	      4715 ns/op	 868.63 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   35810	     16493 ns/op	3973.67 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   21054	     31882 ns/op	2055.61 MB/s	  285081 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   30141	     19792 ns/op	3311.26 MB/s	  138265 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    3548	    297821 ns/op	3520.83 MB/s	 2228129 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     566	   1150564 ns/op	 911.36 MB/s	 5241258 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    1092	    489251 ns/op	2143.23 MB/s	 2228132 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     148	   4176396 ns/op	4017.15 MB/s	36225006 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      45	  12802309 ns/op	1310.48 MB/s	102636052 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     152	   4001193 ns/op	4193.05 MB/s	36224971 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      30	  17641767 ns/op	5943.71 MB/s	252182536 B/op	      40 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      14	  38412155 ns/op	2729.80 MB/s	615225872 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      31	  16229187 ns/op	6461.05 MB/s	252182485 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	11.136s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  242664	      2453 ns/op	 208.70 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  249528	      2407 ns/op	 212.72 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  236958	      2440 ns/op	 209.84 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  126124	      4658 ns/op	 879.35 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  127839	      4760 ns/op	 860.45 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  130102	      4734 ns/op	 865.19 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   35863	     16716 ns/op	3920.55 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   23047	     26067 ns/op	2514.11 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   35413	     16605 ns/op	3946.74 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    2031	    279185 ns/op	3755.85 MB/s	 2228129 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     669	    944421 ns/op	1110.28 MB/s	 5241270 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2754	    243236 ns/op	4310.95 MB/s	 2228124 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     158	   3672740 ns/op	4568.04 MB/s	36225002 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      42	  13951483 ns/op	1202.54 MB/s	102636109 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     163	   3695552 ns/op	4539.84 MB/s	36224996 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      38	  15620857 ns/op	6712.67 MB/s	252182468 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      13	  45094603 ns/op	2325.28 MB/s	615225812 B/op	      51 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      34	  17201336 ns/op	6095.90 MB/s	252182496 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.839s
+env: go1.26.5 GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkFile/size=512B/impl=std-4         	  238581	      2497 ns/op	 205.06 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=512B/impl=v125-4        	  242782	      2468 ns/op	 207.48 MB/s	    1560 B/op	       5 allocs/op
+BenchmarkFile/size=512B/impl=v126-4        	  238341	      2473 ns/op	 207.06 MB/s	    1432 B/op	       6 allocs/op
+BenchmarkFile/size=4KB/impl=std-4          	  124117	      4846 ns/op	 845.17 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=4KB/impl=v125-4         	  104797	      4839 ns/op	 846.42 MB/s	   17560 B/op	      10 allocs/op
+BenchmarkFile/size=4KB/impl=v126-4         	  127345	      4764 ns/op	 859.87 MB/s	   10520 B/op	      12 allocs/op
+BenchmarkFile/size=64KB/impl=std-4         	   36624	     16205 ns/op	4044.16 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v125-4        	   22144	     26724 ns/op	2452.33 MB/s	  285080 B/op	      19 allocs/op
+BenchmarkFile/size=64KB/impl=v126-4        	   36504	     16459 ns/op	3981.67 MB/s	  138264 B/op	      19 allocs/op
+BenchmarkFile/size=1MB/impl=std-4          	    2853	    186235 ns/op	5630.40 MB/s	 2228123 B/op	      27 allocs/op
+BenchmarkFile/size=1MB/impl=v125-4         	     704	    957152 ns/op	1095.52 MB/s	 5241274 B/op	      30 allocs/op
+BenchmarkFile/size=1MB/impl=v126-4         	    2037	    268734 ns/op	3901.91 MB/s	 2228128 B/op	      27 allocs/op
+BenchmarkFile/size=16MB/impl=std-4         	     154	   3706573 ns/op	4526.34 MB/s	36224977 B/op	      34 allocs/op
+BenchmarkFile/size=16MB/impl=v125-4        	      39	  14903748 ns/op	1125.70 MB/s	102636108 B/op	      44 allocs/op
+BenchmarkFile/size=16MB/impl=v126-4        	     165	   3552611 ns/op	4722.50 MB/s	36224989 B/op	      34 allocs/op
+BenchmarkFile/size=100MB/impl=std-4        	      38	  15559100 ns/op	6739.31 MB/s	252182485 B/op	      39 allocs/op
+BenchmarkFile/size=100MB/impl=v125-4       	      12	  46235403 ns/op	2267.91 MB/s	615225864 B/op	      52 allocs/op
+BenchmarkFile/size=100MB/impl=v126-4       	      33	  16051356 ns/op	6532.63 MB/s	252182519 B/op	      39 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	10.516s

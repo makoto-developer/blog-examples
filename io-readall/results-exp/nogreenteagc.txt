@@ -1,0 +1,40 @@
+env: go1.26.5-X:nogreenteagc GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkCliff/size=480B/impl=v125-4         	  200000	        83.26 ns/op	     544 B/op	       2 allocs/op
+BenchmarkCliff/size=512B/impl=v125-4         	  200000	       205.7 ns/op	    1440 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.061s
+env: go1.26.5-X:nogreenteagc GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkCliff/size=480B/impl=v125-4         	  200000	        85.38 ns/op	     544 B/op	       2 allocs/op
+BenchmarkCliff/size=512B/impl=v125-4         	  200000	       197.7 ns/op	    1440 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.060s
+env: go1.26.5-X:nogreenteagc GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkCliff/size=480B/impl=v125-4         	  200000	        97.56 ns/op	     544 B/op	       2 allocs/op
+BenchmarkCliff/size=512B/impl=v125-4         	  200000	       211.1 ns/op	    1440 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.065s
+env: go1.26.5-X:nogreenteagc GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkCliff/size=480B/impl=v125-4         	  200000	        95.22 ns/op	     544 B/op	       2 allocs/op
+BenchmarkCliff/size=512B/impl=v125-4         	  200000	       212.2 ns/op	    1440 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.065s
+env: go1.26.5-X:nogreenteagc GOMAXPROCS=4 GOGC="" GOMEMLIMIT="" NumCPU=4
+goos: linux
+goarch: arm64
+pkg: github.com/makoto-developer/blog-examples/io-readall
+BenchmarkCliff/size=480B/impl=v125-4         	  200000	        85.57 ns/op	     544 B/op	       2 allocs/op
+BenchmarkCliff/size=512B/impl=v125-4         	  200000	       214.2 ns/op	    1440 B/op	       3 allocs/op
+PASS
+ok  	github.com/makoto-developer/blog-examples/io-readall	0.063s
