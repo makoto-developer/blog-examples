@@ -14,6 +14,7 @@
 | [`e91-bell-under-eavesdropping/`](e91-bell-under-eavesdropping/) | Bell の破れは盗聴検知としては鈍い —— E91 を実装して測る（下書き） |
 | [`gc-pause-beam-vs-go/`](gc-pause-beam-vs-go/) | 560万回GCしても止まらない、けれど遅い —— BEAM と Go の停止時間を測る（下書き） |
 | [`io-readall/`](io-readall/) | io.ReadAll が速くなった —— ただし 481〜511バイトでは遅くなる（下書き） |
+| [`eth-claim-constants/`](eth-claim-constants/) | OpenAI の ETH 反証主張に定数を入れると —— Dias と Lima の note を読み、数表を式から再計算した（下書き） |
 
 ## 数字の再現について
 
@@ -31,3 +32,6 @@
   `B/op` と `allocs/op` は、確かめた2つの環境（arm64 の Linux と macOS）でほぼ同じ値になった。
   481〜511B の崖の位置は、Go 1.26 の `io.ReadAll` の切り替え条件から決まる。崖が出るのは、
   エラーを返さない `Read` のあとで、最初の 512B のバッファに 481〜511B がたまったときである
+- **eth-claim-constants** は乱数の seed を固定しているので、`expected-output.txt` と同じ数字が出る。
+  環境で変わるのは、`規模` の行の時間とオブジェクトの大きさだけである。
+  検査するのは「note の式から note の数字が出ること」で、論文の定理の正しさは検査していない
